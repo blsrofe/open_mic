@@ -22,4 +22,10 @@ class User
       user.jokes << joke
     end
   end
+
+  def learn_routine(file)
+    File.readlines(file)[1..101].each do |joke|
+      @jokes << joke
+    end
+  end
 end
