@@ -1,7 +1,11 @@
-class User
-  attr_reader :name
+require './lib/joke'
 
-  def initialize(name)
+class User
+  attr_reader :name,
+              :jokes
+
+  def initialize(name, jokes = [])
     @name = name
+    @jokes = jokes
   end
 end
