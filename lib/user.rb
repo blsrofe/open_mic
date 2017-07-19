@@ -8,4 +8,8 @@ class User
     @name = name
     @jokes = jokes
   end
+
+  def learn(joke)
+    jokes << joke
+  end
 end
